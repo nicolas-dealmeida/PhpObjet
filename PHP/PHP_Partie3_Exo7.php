@@ -1,7 +1,8 @@
 <!-- Déclaration des Variables PHP -->
 
 <?php
-	include "../Config/Function-Web.php" ; // Include des fonctions.  /!\ (Attention à ce que ce soit valide, unique variable à définir et à modifier.) /!\
+    include "../Config/Function-Web.php" ; // Include des fonctions.  /!\ (Attention à ce que ce soit valide, unique variable à définir et à modifier.) /!\
+    include "Function.php" ; // Include des fonctions.  /!\ (Attention à ce que ce soit valide, unique variable à définir et à modifier.) /!\
 	$FILE_LOCAL = basename(__FILE__) ; // Définition d'une variable ayant le nom de la page.
 	$File_Name = basename(__FILE__, ".php") ; // Définition du Nom de la page.
 ?>
