@@ -27,7 +27,12 @@
         </div>
 
         <div class="Div1"> 
-            <p>Texte</p>
+            <?php
+                $Personnage = New Personnage("Pseudo Joueur 1") ;
+                $Personnage -> AffichePseudo() ;
+                echo ' ' ;
+                $Personnage -> AffichePdv() ;
+            ?>
         </div>
 
         <?php
