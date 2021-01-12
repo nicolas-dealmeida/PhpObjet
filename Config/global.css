@@ -27,6 +27,36 @@ padding-right: 1%;
 
 border-style: double ;
 }
+.Div2 {
+background-color: pink;
+
+margin-top: 0px;
+margin-bottom: 0px;
+margin-left: 5px;
+margin-right: 5px;
+
+padding-top: 0%;
+padding-bottom: 0%;
+padding-left: 1%;
+padding-right: 1%;
+
+border-style: solid ;
+}
+.Div3 {
+background-color: pink;
+
+margin-top: -0.5%;
+margin-bottom: -0.5%;
+margin-left: 5px;
+margin-right: 5px;
+
+padding-top: 0%;
+padding-bottom: 0%;
+padding-left: 1%;
+padding-right: 1%;
+
+border-style: solid ;
+}
 
 
 /*          CSS TITRES et TEXTES            */
@@ -190,6 +220,17 @@ background-color: blue;
     }
 }
 
+
+/*          CSS TYPE            */
+.B { /* Gras */
+    font-weight: bold;
+}
+.U { /* Souligné */
+    text-decoration: underline;
+}
+.I { /* Italique */
+    font-style: italic;
+}
 
 /*          CSS COULEURS            */
 
