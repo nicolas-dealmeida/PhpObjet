@@ -26,8 +26,28 @@
             </h1>
         </div>
 
-        <div class="Div1"> 
-            <p>Texte</p>
+        <?php
+
+        ?>
+
+        <div class="Div1">
+            <?php
+                $User = New User ;
+                $User -> AfficheUser() ;
+            ?>
+        </div>
+
+        <div class="Div1">
+            <div class="Div2">
+                <p class="TC B">User</p>
+            </div>
+            <div class="Div3">
+                <p>- Nom : String</p>
+                <p>- Prenom : String</p>
+            </div>
+            <div class="Div2">
+                <p>+ AfficheUser() : Void</p>
+            </div>
         </div>
 
         <?php
