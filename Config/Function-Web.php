@@ -59,18 +59,6 @@ Function Menu() // Fonction affichant le menu.
             <nav>
 				<ul class='Menu'>
 				    <li class='Sous-Menu-1'><a href='..\Config\Accueil.php'>Accueil</a></li>
-                    <li class='Sous-Menu-1'><a href='#'>PhpObjet</a>
-						<ul class='Sous-Menu-S1-B'>
-							<li><a href='..\PHP\PHP_Partie3_Exo1.php'>Exercice 1</a></li>
-							<li><a href='..\PHP\PHP_Partie3_Exo2.php'>Exercice 2</a></li>
-							<li><a href='..\PHP\PHP_Partie3_Exo3.php'>Exercice 3</a></li>
-							<li><a href='..\PHP\PHP_Partie3_Exo4.php'>Exercice 4</a></li>
-							<li><a href='..\PHP\PHP_Partie3_Exo5.php'>Exercice 5</a></li>
-							<li><a href='..\PHP\PHP_Partie3_Exo6.php'>Exercice 6</a></li>
-							<li><a href='..\PHP\PHP_Partie3_Exo7.php'>Exercice 7</a></li>
-							<li><a href='..\PHP\PHP_Partie3_Exo8.php'>Exercice 8</a></li>
-						</ul>
-                    </li>
                 </ul>
             </nav>
         </div>
