@@ -5,8 +5,7 @@
         // Variables (Variables)
         Private $_Pseudo ;
         Private $_Vie ;
-        Private $_Dégat ;
-        Private $_Défense ;
+        Private $_ID ;
 
         // Public Function (Utilisable par tous)
 
@@ -30,7 +29,6 @@
         Public Function Attaquer($Personnage,$Dégats){
             ?> <p> <?= $this->_Pseudo ?> attaque <?php $Personnage->AffichePseudo() ?> </p> <?php ;
             ?> <p> <?php $Personnage -> SeDefendre($Dégats) ?> </p> <?php ;
-
         }
         // Se Defendre
         Public Function SeDefendre($Dégats){
