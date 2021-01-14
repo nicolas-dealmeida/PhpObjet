@@ -1,18 +1,44 @@
 <?php
+
+    // Définition de la BDD de manière général.
+    $BDD_Host		=	"192.168.64.106" ;		// Adresse du Serveur.
+    $BDD_User		=	"root" ;	    		// Nom User BDD.
+    $BDD_Password	=	"root" ;	            // MDP User BDD.
+    $BDD_Name		=	"Pie_TD3" ;			    // Nom de la BDD.
+
+    try {
+        $BDD = NEW PDO("mysql:host={$BDD_Host};dbname={$BDD_Name}",$BDD_User, $BDD_Password) ;
+        $BDD -> setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION) ;
+    }
+    catch(PDOEXCEPTION $e) {
+        $e -> getMessage() ; // Si Erreur, Affiche Erreur
+    }
+
     // Class User
-    Class Personnage {
+    Class Personnage_BDD {
 
         // Variables (Variables)
         Private $_Pseudo ;
         Private $_Vie ;
         Private $_ID ;
+        Private $_BDD ;
+        Private $_Attaque ;
+        Private $_ID ;
 
         // Public Function (Utilisable par tous)
 
-        // Définiti Vie à 100
-        Public Function __construct($_Pseudo){
-            $this -> _Vie = 100 ;
-            $this -> _Pseudo = $_Pseudo ;
+
+
+
+        // __construct
+        Public Function __construct($_ID){
+
+            $this->$_BDD = query("SELECT * FROM `Personnage` WHERE `Personnage_ID`=".$_ID)  ;  // Requêtes BDD
+            $this->$_BDD_Personnage = $this->$_BDD -> fetch() ;
+
+            $this->_Vie = $_BDD_Personnage['Vie'] ;
+            $this->_Pseudo = $_BDD_Personnage['Pseudo'] ;
+            $this->_Attaque = $_BDD_Personnage['Attaque'] ;
         }
  
 

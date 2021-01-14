@@ -4,7 +4,10 @@
     include "../Config/Function-Web.php" ; // Include des fonctions.  /!\ (Attention à ce que ce soit valide, unique variable à définir et à modifier.) /!\
     include "Function.php" ; // Include des fonctions.  /!\ (Attention à ce que ce soit valide, unique variable à définir et à modifier.) /!\
 	$FILE_LOCAL = basename(__FILE__) ; // Définition d'une variable ayant le nom de la page.
-	$File_Name = basename(__FILE__, ".php") ; // Définition du Nom de la page.
+    $File_Name = basename(__FILE__, ".php") ; // Définition du Nom de la page.
+    
+
+
 ?>
 
 <!-- Page Web -->
@@ -28,8 +31,8 @@
 
         <div class="Div1"> 
             <?php
-                $Personnage1 = New Personnage("Tom") ;
-                $Personnage2 = New Personnage("Axlande") ;
+                $Personnage1 = New Personnage_BDD("1") ;
+                $Personnage2 = New Personnage_BDD("2") ;
 
                 $Personnage1 -> Attaquer($Personnage2,30) ;
             ?>
