@@ -33,7 +33,7 @@
         // Se Defendre
         Public Function SeDefendre($Dégats){
             $this->_Vie = ($this->_Vie - $Dégats) ;
-            echo "$this->_Pseudo se défend, à subit $Dégats dégats, et a donc " ;
+            echo "$this->_Pseudo se défend, à subit $Dégats dégats, et a maintenant " ;
             $this->AffichePdv() ;
             echo " points de vie." ;
         }

@@ -28,10 +28,10 @@
 
         <div class="Div1"> 
             <?php
-                $Personnage1 = New Personnage("Joueur 1") ;
-                $Personnage2 = New Personnage("Joueur 2") ;
+                $Personnage1 = New Personnage("Tom") ;
+                $Personnage2 = New Personnage("Alexandre") ;
 
-                $Personnage1 -> Attaquer($Personnage2,50) ;
+                $Personnage1 -> Attaquer($Personnage2,30) ;
             ?>
         </div>
 
