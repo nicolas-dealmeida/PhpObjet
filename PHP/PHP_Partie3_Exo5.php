@@ -27,7 +27,12 @@
         </div>
 
         <div class="Div1"> 
-            <p>Texte</p>
+            <?php
+                $Personnage1 = New Personnage("Tom") ;
+                $Personnage2 = New Personnage("Axlande") ;
+
+                $Personnage1 -> Attaquer($Personnage2,30) ;
+            ?>
         </div>
 
         <?php
